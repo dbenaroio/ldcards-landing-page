@@ -1,26 +1,159 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* =============================================================
+   Life Design Cards — Design Tokens
+   Estratti dal file Figma "Life Design" (node 6:514)
+   ============================================================= */
+@theme {
+  /* Brand palette */
+  --color-brand: #4646c6;
+  --color-brand-600: #3a3aa8;
+  --color-brand-700: #2f2f8a;
+  --color-brand-deep: #271278;
+  --color-brand-darker: #1b1a33;
+
+  /* Neutrals (Heading + Body) */
+  --color-ink: #3a3955;
+  --color-ink-soft: #5c5380;
+  --color-body: #4b5563;
+  --color-body-strong: #111827;
+  --color-muted: #9ca3af;
+  --color-line: #e5e7eb;
+
+  /* Surface */
+  --color-cream: #f7f6f2;
+  --color-cream-200: #ece9f4;
+
+  /* Phase palette — soft (bg) / 200 (accent) / 400 (medium) / saturated */
+  --color-phase0: #5c5380; /* Esploratore (viola) */
+  --color-phase0-400: #7e6fb0;
+  --color-phase0-200: #c9c3de;
+  --color-phase0-soft: #ece9f4;
+
+  --color-phase1: #2c7fae; /* Empatizzare (blu) */
+  --color-phase1-400: #3da7dd;
+  --color-phase1-200: #aedaf1;
+  --color-phase1-soft: #e1f0f9;
+
+  --color-phase2: #3c7a51; /* Definire (verde) */
+  --color-phase2-400: #57aa70;
+  --color-phase2-200: #b8dbc3;
+  --color-phase2-soft: #e6f2e9;
+
+  --color-phase3: #c0762f; /* Ideare (arancio/giallo caldo) */
+  --color-phase3-400: #ef9c46;
+  --color-phase3-200: #f8d5b1;
+  --color-phase3-soft: #fcefdf;
+
+  --color-phase4: #b03c3c; /* Prototipare (rosso) */
+  --color-phase4-400: #e0504f;
+  --color-phase4-200: #f2b6b5;
+  --color-phase4-soft: #fbe6e5;
+
+  --color-phase5: #b89324; /* Fare (oro) */
+  --color-phase5-400: #f1c63f;
+  --color-phase5-200: #f9e7ae;
+  --color-phase5-soft: #fdf6dc;
+
+  /* Typography */
+  --font-display: var(--font-fraunces), ui-serif, Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-ui: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Radii */
+  --radius-card: 16px;
+  --radius-pill: 9999px;
+
+  /* Container */
+  --container-wide: 1200px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* =============================================================
+   Base
+   Wrapped in @layer base so utilities (text-*, heading-display)
+   take precedence over element selectors.
+   ============================================================= */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html,
+  body {
+    overflow-x: clip;
+  }
+
+  body {
+    font-family: var(--font-ui);
+    color: var(--color-body);
+    background-color: var(--color-cream);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Default headings: serif. Color is intentionally left unset so that
+     utilities like .heading-display, .text-brand, .text-ink win. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+  }
+
+  ::selection {
+    background: var(--color-brand);
+    color: white;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: 4px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* =============================================================
+   Utilities
+   ============================================================= */
+@utility container-wide {
+  width: 100%;
+  max-width: var(--container-wide);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-wide {
+    padding-inline: 2rem;
+  }
+}
+
+/* Decorative concentric circles (used in hero & "come si gioca") */
+@utility ring-stack {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+}
+
+/* Fluid display heading (hero) */
+@utility heading-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  font-size: clamp(2.5rem, 6vw, 4.6rem);
+  color: var(--color-brand);
+}
+
+@utility heading-section {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--color-brand);
+  font-size: clamp(1.75rem, 3.2vw, 2.25rem);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
 }
