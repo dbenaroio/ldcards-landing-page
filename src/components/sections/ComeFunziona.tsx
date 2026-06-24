@@ -100,7 +100,7 @@ export function ComeFunziona() {
           {phases.map((p) => (
             <li
               key={p.index}
-              className={`relative overflow-hidden rounded-2xl p-6 ${p.bg}`}
+              className={`relative overflow-hidden rounded-[22px] px-[22px] pt-[30px] pb-8 ${p.bg}`}
             >
               {/*
                 Decorative corner stack — top-right corner of the card.
@@ -125,18 +125,31 @@ export function ComeFunziona() {
               </div>
 
               <div className="relative">
-                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.18em] font-sans font-semibold">
-                  <span className={`${p.text}`}>FASE {p.index}</span>
-                  <span className={`${p.text}`}>{p.duration}</span>
+                {/*
+                  Inline label row: "FASE X · phase name · ~Y min"
+                  Allineamento alla baseline come da Figma. Indent di 13.6px
+                  dal bordo del contenuto della card (riproduce il padding
+                  interno della pill nel Figma).
+                */}
+                <div className="flex items-baseline gap-2.5 pl-[14px]">
+                  <span
+                    className={`font-sans font-semibold text-[10px] uppercase tracking-[0.06em] ${p.text}`}
+                  >
+                    Fase {p.index}
+                  </span>
+                  <span
+                    className={`font-display font-bold text-base lowercase ${p.text}`}
+                  >
+                    {p.name}
+                  </span>
+                  <span
+                    className={`font-sans font-semibold text-[10px] ${p.text}`}
+                  >
+                    {p.duration}
+                  </span>
                 </div>
 
-                <p
-                  className={`mt-2 font-display font-bold text-lg ${p.text} lowercase`}
-                >
-                  {p.name}
-                </p>
-
-                <p className="mt-3 font-sans text-[15px] leading-relaxed text-ink">
+                <p className="mt-5 font-sans text-base leading-relaxed text-ink">
                   {p.description}
                 </p>
               </div>

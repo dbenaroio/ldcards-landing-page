@@ -6,15 +6,15 @@ export function PerChi() {
   return (
     <section id="per-chi" className="py-20 md:py-28">
       <div className="container-wide">
-        <div className="grid gap-12 md:grid-cols-2 md:gap-16 items-center">
+        <div className="grid gap-12 md:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] md:gap-16 items-center">
           {/* Visual on the left on desktop, below text on mobile */}
           <div className="order-2 md:order-1 min-w-0">
-            <div className="relative mx-auto w-full max-w-[480px] aspect-[476/409]">
+            <div className="relative mx-auto w-full max-w-[560px] lg:max-w-[600px] aspect-[476/409]">
               <Image
                 src={perChiCards}
                 alt="Carta empatizzare fase 1 e carta domanda con riflessione"
                 fill
-                sizes="(max-width: 768px) 80vw, 480px"
+                sizes="(max-width: 768px) 90vw, (max-width: 1024px) 560px, 600px"
                 className="object-contain"
               />
             </div>

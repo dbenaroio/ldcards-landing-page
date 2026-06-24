@@ -47,7 +47,7 @@ export function Hero() {
       </div>
 
       <div className="container-wide relative">
-        <div className="grid gap-12 md:grid-cols-2 md:gap-10 lg:gap-16 items-center">
+        <div className="grid gap-12 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-10 lg:gap-16 items-center">
           <div className="min-w-0">
             <p className="font-sans uppercase tracking-[0.18em] text-xs font-semibold text-phase1">
               Un gioco di Life Design
@@ -95,13 +95,13 @@ export function Hero() {
 
           {/* Cards visual */}
           <div className="relative min-w-0">
-            <div className="relative mx-auto w-full max-w-[560px] aspect-[899/602]">
+            <div className="relative mx-auto w-full max-w-[520px] lg:max-w-[580px] aspect-[1071/964]">
               <Image
                 src={heroCards}
                 alt="Carta esploratore fase 0 e carta domanda Chi si mette in gioco?"
                 fill
                 priority
-                sizes="(max-width: 768px) 90vw, 560px"
+                sizes="(max-width: 768px) 90vw, (max-width: 1024px) 520px, 580px"
                 className="object-contain"
               />
             </div>

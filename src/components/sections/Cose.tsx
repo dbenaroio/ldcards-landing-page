@@ -6,7 +6,7 @@ export function Cose() {
   return (
     <section id="cose" className="py-20 md:py-28">
       <div className="container-wide">
-        <div className="grid gap-12 md:grid-cols-2 md:gap-16 items-center">
+        <div className="grid gap-12 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-16 items-center">
           <div className="min-w-0">
             <SectionHeading>Cos&apos;è</SectionHeading>
 
@@ -38,12 +38,12 @@ export function Cose() {
           </div>
 
           <div className="relative min-w-0">
-            <div className="relative mx-auto aspect-square w-full max-w-[520px]">
+            <div className="relative mx-auto aspect-square w-full max-w-[600px] lg:max-w-[640px]">
               <Image
                 src={flower}
                 alt="Composizione delle carte delle 5 fasi: empatizzare, definire, ideare, prototipare"
                 fill
-                sizes="(max-width: 768px) 80vw, 520px"
+                sizes="(max-width: 768px) 90vw, (max-width: 1024px) 600px, 640px"
                 className="object-contain"
               />
             </div>
