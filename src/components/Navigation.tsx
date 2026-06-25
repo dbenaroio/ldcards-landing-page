@@ -33,11 +33,10 @@ export function Navigation() {
       >
         <Link
           href="/"
-          className="font-display font-bold text-brand-deep text-lg sm:text-xl md:text-[22px] tracking-tight whitespace-nowrap"
-          aria-label="Life Design Cards — home"
+          className="font-display font-bold text-brand-deep text-base sm:text-xl md:text-[22px] tracking-tight whitespace-nowrap"
+          aria-label="Life Design Cards, home"
         >
-          <span className="sm:hidden">LD Cards</span>
-          <span className="hidden sm:inline">Life Design Cards</span>
+          Life Design Cards
         </Link>
 
         <ul className="hidden md:flex items-center gap-8 font-ui text-sm text-[#1A1A1A]">
@@ -55,9 +54,8 @@ export function Navigation() {
 
         <div className="flex items-center gap-2">
           <Button href="#starter-kit" size="md" className="whitespace-nowrap">
-            <span aria-hidden>→</span>
-            <span className="hidden sm:inline">Prendi il KIT</span>
-            <span className="sm:hidden">Il KIT</span>
+            <span aria-hidden className="hidden sm:inline">→</span>
+            Prendi il KIT
           </Button>
         </div>
       </nav>

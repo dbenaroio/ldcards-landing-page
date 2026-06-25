@@ -66,9 +66,8 @@ export function Hero() {
                 adesso. Con gli amici di sempre o con persone appena conosciute.
               </p>
               <p>
-                Non è un gioco in cui si vince o si perde. È un&apos;esperienza
-                collaborativa e creativa per esplorare e progettare la tua vita, in
-                cinque fasi.
+                Non è un gioco in cui si vince o si perde. È <b>un&apos;esperienza
+                collaborativa e creativa per esplorare e progettare la tua vita</b>.
               </p>
             </div>
 

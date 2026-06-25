@@ -11,7 +11,7 @@ const steps = [
     n: "02",
     title: "Pescate e rispondete",
     description:
-      "L'Esploratore pesca carte, legge ad alta voce e condivide. Il gruppo ascolta — niente consigli o giudizi.",
+      "L'Esploratore pesca carte, legge ad alta voce e condivide. Il gruppo ascolta: niente consigli o giudizi.",
   },
   {
     n: "03",
@@ -53,7 +53,7 @@ export function ComeSiGioca() {
 
       <div className="container-wide relative">
         <SectionHeading align="center">Come si gioca</SectionHeading>
-        <p className="mt-4 max-w-xl mx-auto text-center font-sans text-base leading-relaxed text-ink">
+        <p className="mt-4 max-w-3xl mx-auto text-center text-balance font-sans text-base leading-relaxed text-ink">
           Ogni turno si concentra su un Esploratore che guida il gruppo
           attraverso le fasi del Life Design.
         </p>

@@ -25,22 +25,21 @@ export function PerChi() {
 
             <div className="mt-7 space-y-5 font-ui text-[15px] md:text-base leading-relaxed text-body">
               <p>
-                Qualcosa non torna. Non è una situazione drammatica, è più sottile: la
-                sensazione di non stare andando esattamente nella direzione giusta,
-                senza riuscire a capire bene perché.
+                Queste carte fanno per te se ogni tanto senti che qualcosa non torna. Non è per forza una situazione drammatica, è più sottile: <b>la
+                sensazione di non stare andando esattamente nella direzione giusta</b>,
+                senza riuscire a capire bene il perché.
               </p>
               <p>
                 Potrebbe essere il lavoro, una relazione, un progetto lasciato a metà,
-                qualcosa nella nostra vita che meriterebbe più attenzione ma non la
-                riceve. I pensieri ci tornano sopra. Ci costruisci mille scenari e
-                piani. Ma tutto finisce sempre per rimanere nella tua testa.
+                <b>qualcosa nella nostra vita che meriterebbe più attenzione ma non la
+                sta ricevendo</b>. I pensieri ci tornano sopra. Ci costruisci mille scenari, ma tutto finisce sempre per rimanere nella tua testa.
               </p>
               <p>
-                Quello che sposta le cose è agire, fare un primo passo. E spesso il
+                Quello che cambia le cose è <b>agire, fare un primo passo</b>. E spesso il
                 primo passo arriva connettendosi con qualcuno che ascolta senza
-                giudicare e ti fa le domande che da solo non ti faresti. Le Life Design
+                giudicare e ti fa le domande che da solo non ti faresti. <b>Le Life Design
                 Cards creano esattamente quello spazio necessario per queste
-                conversazioni.
+                conversazioni</b>.
               </p>
             </div>
           </div>

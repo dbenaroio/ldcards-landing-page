@@ -12,7 +12,7 @@ export function Cose() {
 
             <div className="mt-7 space-y-5 font-ui text-[15px] md:text-base leading-relaxed text-body">
               <p>
-                Le Life Design Cards sono un mazzo fisico suddiviso in cinque fasi:{" "}
+                Le Life Design Cards sono suddivise in cinque fasi:{" "}
                 <strong className="text-ink font-semibold">
                   Empatizzare, Definire, Ideare, Prototipare e Fare
                 </strong>
@@ -23,16 +23,33 @@ export function Cose() {
                 pregresse.
               </p>
               <p>
-                Funziona per una serata diversa dal solito con amici o persone appena
+                Funziona per una serata con gli amici diversa dal solito o con persone appena
                 conosciute. Funziona ancora meglio quando hai un nodo vero da
                 sciogliere. E funziona anche da soli, lavorando per iscritto sulle
                 carte.
               </p>
               <p>
-                Il mazzo nasce dalla metodologia Life Design creata dalla Stanford
-                University e dall&apos;esperienza di Davide Benaroio nel progetto Life
-                Design Program, avviato nel 2022 e ormai con centinaia di partecipanti
-                in Italia, Olanda, Germania e Australia.
+                Il mazzo nasce dalla <b>metodologia Life Design creata dalla Stanford
+                University</b> e dall&apos;esperienza di{" "}
+                <a
+                  href="https://www.linkedin.com/in/dbenaroio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-brand-deep underline underline-offset-[3px] decoration-1 transition-colors hover:text-brand"
+                >
+                  Davide Benaroio
+                </a>{" "}
+                nel progetto{" "}
+                <a
+                  href="https://lifedesign.davidebenaroio.it/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-brand-deep underline underline-offset-[3px] decoration-1 transition-colors hover:text-brand"
+                >
+                  Life Design Program
+                </a>
+                , avviato nel 2022 e ormai con centinaia di partecipanti in Italia,
+                Olanda, Germania e Australia.
               </p>
             </div>
           </div>

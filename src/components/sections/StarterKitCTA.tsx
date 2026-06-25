@@ -19,7 +19,7 @@ export function StarterKitCTA() {
           </h2>
 
           <div className="mt-6 flex flex-col items-center gap-2">
-            <Button href="#acquista">Acquista lo STARTER KIT — 59€</Button>
+            <Button href="#acquista">Acquista lo STARTER KIT a 59€</Button>
             <p className="font-ui text-sm text-body">
               <span className="line-through text-muted mr-1">129€</span>
               (spedizione inclusa)

@@ -53,7 +53,7 @@ export function SocialProof() {
                 </p>
               </blockquote>
               <figcaption className="mt-4 font-display font-semibold text-brand text-[15px]">
-                — {t.author}, {t.role}
+                {t.author}, {t.role}
               </figcaption>
             </figure>
           ))}

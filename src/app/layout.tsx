@@ -24,9 +24,9 @@ const inter = Inter({
 });
 
 const siteUrl = "https://lifedesigncards.it";
-const siteTitle = "Life Design Cards — Progetta la tua vita, una carta alla volta";
+const siteTitle = "Life Design Cards: Progetta la tua vita, una carta alla volta";
 const siteDescription =
-  "Le Life Design Cards sono un mazzo fisico di 80 carte basato sulla metodologia Life Design della Stanford University. Un'esperienza collaborativa per esplorare e progettare la tua vita in 5 fasi.";
+  "Le Life Design Cards sono un mazzo fisico di 80 carte basato sulla metodologia Life Design della Stanford University. Un'esperienza collaborativa per esplorare e progettare la tua vita, una carta alla volta.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Life Design Cards — Progetta la tua vita, una carta alla volta",
+        alt: "Life Design Cards: Progetta la tua vita, una carta alla volta",
       },
     ],
   },

@@ -15,11 +15,11 @@ const faqs = [
   },
   {
     q: "Il workshop incluso nello STARTER KIT è live o registrato?",
-    a: "È una sessione live di 90 minuti con un facilitatore esperto. La pianifichi quando preferisci dopo aver ricevuto il kit.",
+    a: "È una sessione live di 60 minuti con un facilitatore esperto. La pianifichi quando preferisci dopo aver ricevuto il kit.",
   },
   {
     q: "Cosa succede dopo?",
-    a: "Ogni ciclo si chiude con un'azione concreta da compiere entro domani. Le carte ti accompagnano nelle settimane successive — puoi rifare il ciclo su nuovi temi tutte le volte che vuoi.",
+    a: "Ogni ciclo si chiude con un'azione concreta da compiere entro domani. Le carte ti accompagnano nelle settimane successive. Puoi rifare il ciclo su nuovi temi tutte le volte che vuoi.",
   },
 ];
 

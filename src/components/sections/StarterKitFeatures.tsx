@@ -9,7 +9,7 @@ const features = [
   {
     title: "Workshop Personale",
     description:
-      "Una sessione live di 90 minuti con un facilitatore esperto. Imparerai come usare le carte e farai la tua prima sessione di Life Design.",
+      "Una sessione live di 60 minuti con un facilitatore esperto. Imparerai come usare le carte e farai la tua prima sessione di Life Design.",
   },
 ];
 
