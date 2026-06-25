@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28"
+      className="relative overflow-hidden pt-10 pb-16 md:pt-12 md:pb-20"
     >
       {/*
         Decorative concentric circles — top-right corner.
@@ -47,19 +47,17 @@ export function Hero() {
       </div>
 
       <div className="container-wide relative">
-        <div className="grid gap-12 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-10 lg:gap-16 items-center">
+        <div className="grid gap-10 md:grid-cols-[minmax(0,6fr)_minmax(0,5fr)] md:gap-10 lg:gap-12 items-center">
           <div className="min-w-0">
             <p className="font-sans uppercase tracking-[0.18em] text-xs font-semibold text-phase1">
               Un gioco di Life Design
             </p>
 
-            <h1 className="heading-display mt-5 max-w-full">
-              <span className="block sm:inline">Progetta la</span>{" "}
-              <span className="block sm:inline">tua vita, una</span>{" "}
-              <span className="block sm:inline">carta alla volta.</span>
+            <h1 className="heading-display mt-4 max-w-full text-balance">
+              Progetta la tua vita, una carta alla volta.
             </h1>
 
-            <div className="mt-7 max-w-[40ch] space-y-5 font-sans text-[17px] md:text-[19px] leading-relaxed text-ink">
+            <div className="mt-6 max-w-[52ch] space-y-4 font-sans text-[16px] md:text-[18px] leading-relaxed text-ink">
               <p>
                 Le{" "}
                 <strong className="text-ink font-semibold">Life Design Cards</strong>{" "}
@@ -74,7 +72,7 @@ export function Hero() {
               </p>
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-7 flex flex-wrap items-center gap-3">
               <Button href="#starter-kit" variant="brand">
                 Acquista Life Design Cards
               </Button>
@@ -83,7 +81,7 @@ export function Hero() {
               </Button>
             </div>
 
-            <ul className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-2 font-sans text-sm text-brand-darker">
+            <ul className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 font-sans text-sm text-brand-darker">
               {stats.map((s) => (
                 <li key={s.label} className="flex items-baseline gap-1.5">
                   <span className="font-bold">{s.value}</span>
@@ -93,15 +91,16 @@ export function Hero() {
             </ul>
           </div>
 
-          {/* Cards visual */}
-          <div className="relative min-w-0">
-            <div className="relative mx-auto w-full max-w-[520px] lg:max-w-[580px] aspect-[1071/964]">
+          {/* Cards visual — sborda a destra sul padding del container per
+              avere più area visibile pur tenendo il testo largo a sinistra. */}
+          <div className="relative min-w-0 md:-mr-6 lg:-mr-12 xl:-mr-16">
+            <div className="relative ml-auto mr-auto md:mr-0 w-full max-w-[520px] lg:max-w-[620px] aspect-[1071/964]">
               <Image
                 src={heroCards}
                 alt="Carta esploratore fase 0 e carta domanda Chi si mette in gioco?"
                 fill
                 priority
-                sizes="(max-width: 768px) 90vw, (max-width: 1024px) 520px, 580px"
+                sizes="(max-width: 768px) 90vw, (max-width: 1024px) 540px, 620px"
                 className="object-contain"
               />
             </div>

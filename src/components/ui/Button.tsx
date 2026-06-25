@@ -8,12 +8,12 @@ const base =
   "inline-flex items-center justify-center gap-2 rounded-full font-sans font-semibold transition-all duration-200 will-change-transform focus-visible:outline-2 focus-visible:outline-offset-3";
 
 const variants: Record<Variant, string> = {
-  // Conversion CTAs (nav, starter kit, final CTA): deep navy purple (#271278)
+  // Conversion CTAs (nav, starter kit, final CTA): deep purple (#271278) → hover bright brand purple (#4646C6)
   primary:
-    "bg-brand-deep text-white hover:bg-brand-darker active:scale-[0.98] shadow-[0_8px_24px_-14px_rgba(39,18,120,0.55)] hover:shadow-[0_12px_28px_-12px_rgba(39,18,120,0.5)]",
-  // Hero attention-grabbing CTA: bright brand purple (#4646C6)
+    "bg-brand-deep text-white hover:bg-brand active:scale-[0.98] shadow-[0_8px_24px_-14px_rgba(39,18,120,0.55)] hover:shadow-[0_12px_28px_-10px_rgba(70,70,198,0.5)]",
+  // Hero attention-grabbing CTA: bright brand purple (#4646C6) → hover deep purple (#271278)
   brand:
-    "bg-brand text-white hover:bg-brand-600 active:scale-[0.98] shadow-[0_8px_24px_-12px_rgba(70,70,198,0.6)] hover:shadow-[0_12px_28px_-10px_rgba(70,70,198,0.55)]",
+    "bg-brand text-white hover:bg-brand-deep active:scale-[0.98] shadow-[0_8px_24px_-12px_rgba(70,70,198,0.6)] hover:shadow-[0_12px_28px_-12px_rgba(39,18,120,0.55)]",
   // Hero secondary: outline only, deep ink color (#1B1A33)
   secondary:
     "bg-transparent text-brand-darker border border-brand-darker hover:bg-brand-darker/5 active:scale-[0.98]",
